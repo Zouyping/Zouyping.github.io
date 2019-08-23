@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Day 25</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/day 25.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	
+    <div class="select-btn-group">
+    	<div class="btn-select active" id="all-tag">ALL</div>
+    	<div class="btn-select" id="ux-tag">UX</div>
+    	<div class="btn-select" id="ui-tag">UI</div>
+    	<div class="btn-select" id="front-tag">FRONT</div>
+    	<div class="btn-select" id="animate-tag">ANIMATION</div>
+    </div>
+
+    <div class="container">
+    	<div class="item ux" style="background-image: url(image/jose.jpg);"></div>
+    	<div class="item ui" style="background-image: url(image/russ.jpg);"></div>
+    	<div class="item front" style="background-image: url(image/cogs.jpg);"></div>
+    	<div class="item animate" style="background-image: url(image/adult.jpg);"></div>
+    	<div class="item ux" style="background-image: url(image/jose.jpg);"></div>
+    	<div class="item ui" style="background-image: url(image/russ.jpg);"></div>
+    	<div class="item front" style="background-image: url(image/cogs.jpg);"></div>
+    	<div class="item animate" style="background-image: url(image/adult.jpg);"></div>
+    	<div class="item ux" style="background-image: url(image/jose.jpg);"></div>
+    	<div class="item ui" style="background-image: url(image/russ.jpg);"></div>
+    	<div class="item front" style="background-image: url(image/cogs.jpg);"></div>
+    	<div class="item animate" style="background-image: url(image/adult.jpg);"></div>
+    </div>
+
+
+    <script type="text/javascript">
+    	$(document).ready(function()
+        //基本元素loading结束后让JQuery生效
+    	{
+    		$(".btn-select").click(function(){
+    			$(this).addClass("active");
+    			$(this).siblings().removeClass("active");
+    			//点击#-tag就为btn-select添加一个activeClass，并移除带有active
+    		})
+    	$("#all-tag").click(function(){
+    		$(".item").fadeIn(200);//设置200ms加载完
+    	})
+    	$("#ux-tag").click(function(){
+    		$(".item").fadeOut(200);
+    		$(".ux").fadeIn(200);
+    	})
+    	$("#ui-tag").click(function(){
+    		$(".item").fadeOut(200);
+    		$(".ui").fadeIn(200);
+    	})
+    	$("#front-tag").click(function(){
+    		$(".item").fadeOut(200);
+    		$(".front").fadeIn(200);
+    	})
+    	$("#animate-tag").click(function(){
+    		$(".item").fadeOut(200);
+    		$(".animate").fadeIn(200);
+    	})
+    	})
+    </script>
+
+</body>
+</html>
