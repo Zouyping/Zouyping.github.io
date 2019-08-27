@@ -1,72 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-	<title>Day 25</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/day 25.css">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
-	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<title>Zipping's Portfolio</title>
+    
+    <link rel="icon" href="imgs/logo.png" type="images/x-ico" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body class="home-body"> 
+	<!-- <div class="nav_banner" style="background-image: url(imgs/banner.png);"> -->
+		<nav class="navbar navbar-default navbar-transparent">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><div class="logo" style="background-image: url(imgs/logo.png); background-position: center; background-size: cover; border-radius: 50%;"></div>Zipping</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav navbar-right">
+				        <li class="active"><a href="index.html">作品集</a></li>
+				        <li><a href="writings.html">关于我</a></li>
+				        <!-- <li><a href="#">ABOUT</a></li> -->
+				    </ul>
+				</div>
+			</div>
+		</nav>
+	<!-- </div> -->
+
+	<div class="container-my">
+	<div class="self-intro">
+		<!-- <div class="title">欢迎来到我的个人作品集网站</div>  -->
+		<div class="self-intro-bo">
+		  <div class='photo-container'><img class='myphoto' src="imgs/zyp.jpg"></div>
+		  <div class="txt">Hi~我是Zipping</div> 
+		  <div class="txt">/  永远保持探索世界的好奇心  /</div> 
+	    </div>
+	</div>
+
+		<div class="tags-container flex flex--center">
+			<div class="tag active" id="tagAll" style="cursor: pointer;">全部</div>
+			<div class="tag" id="tagConcept" style="cursor: pointer;">概念产品</div>
+			<div class="tag" id="tagUX" style="cursor: pointer;">交互设计</div>
+			<div class="tag" id="tagPractice" style="cursor: pointer;">实际项目</div>
+			<div class="tag" id="tagCulture" style="cursor: pointer;">文创产品</div>
+			<div class="tag" id="tagVisual" style="cursor: pointer;">视觉设计</div>
+			<div class="tag" id="tagJewelry" style="cursor: pointer;">首饰设计</div>
+		</div>
+
+		<div class="pro-container clearfix">
+			
+			<a href="pro-season.html">
+				<div class="project-container Practice" style="background-color:#d02922; background-image: url(imgs/封面-心肺.jpg); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">心肺复苏急救毯</div> 
+						<div class="pro-txt">面向心肺复苏的公共场所急救产品设计</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="project-container Concept" style="background-color:white; background-image: url(imgs/封面-心率.jpg); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">Angle Beats</div>
+						<div class="pro-txt">关于胎儿心率的概念设计</div>
+					</div>
+				</div>
+			</a>
+	
+
+			<a href="#">
+				<div class="project-container Concept UX Visual" style="background-color: #0d6e75;background-image: url(imgs/封面-鸟.jpg); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">鸟瞰</div> 
+						<div class="pro-txt">鸟类科普APP设计</div>
+					</div>
+				</div>
+			</a>
+
+
+			<a href="#">
+				<div class="project-container Practice" style="background-color: #4d626b; background-image: url(imgs/封面-锤子.jpg); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">锤子科技周边产品</div> 
+						<div class="pro-txt">实习项目</div>
+					</div>
+				</div>
+			</a>
+			<a href="#" >
+				<div class="project-container Culture Practice" style="background-color: #dbb7a4; background-image: url(imgs/封面-借箭.jpg); background-size:cover; background-position: center; background-repeat: no-repeat;">
+					<div class="pro-intro-container">
+						<div class="pro-title">草船借箭</div> 
+						<div class="pro-txt">桌面文具文创设计</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="project-container UX Concept" style="background-color:#fe8915; background-image: url(imgs/封面-佛珠.jpg); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">记忆佛珠</div> 
+						<div class="pro-txt"> 老年人智能首饰概念设计</div>
+					</div>
+				</div>
+			</a>	
+
+			<a href="#">
+				<div class="project-container UX Concept" style="background-color:#ff9794;background-image: url(imgs/封面-手环.jpg); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">Circadian Rhythms</div> 
+						<div class="pro-txt">辅助婴幼儿生物钟养成概念设计</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="project-container Practice" style="background-color:#002430; background-image: url(imgs/封面-领克.jpg); background-size: cover; background-position: center; ">
+					<div class="pro-intro-container">
+						<div class="pro-title">领克中标项目</div> 
+						<div class="pro-txt">实习项目</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="project-container Culture Practice" style="background-color:#eba33c; background-image: url(imgs/封面-筷子.jpg); background-size: cover; background-position: center; ">
+					<div class="pro-intro-container">
+						<div class="pro-title">借箸代筹</div> 
+						<div class="pro-txt">趣味餐具文创设计</div>
+					</div>
+				</div>
+			</a>
+            
+            <a href="#">
+				<div class="project-container Visual" style="background-color:#141714; background-image: url(imgs/封面-UI.jpg); background-size: cover; background-position: center; ">
+					<div class="pro-intro-container">
+						<div class="pro-title">UI设计</div> 
+						<div class="pro-txt">酷跑音乐</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="project-container Visual" style="background-color:#b6c0c7; background-image: url(imgs/封面-工业.jpg); background-size: cover; background-position: center; ">
+					<div class="pro-intro-container">
+						<div class="pro-title">VI设计</div> 
+						<div class="pro-txt">麦律/温州国际工业工业博览会</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="project-container Jewelry Practice Culture" style="background-color:#292728; background-image: url(imgs/封面-首饰.jpg); background-size: cover; background-position: center; ">
+					<div class="pro-intro-container">
+						<div class="pro-title">禅</div> 
+						<div class="pro-txt">陶艺与金属的禅道</div>
+					</div>
+				</div>
+			</a>
+
+
+				
+		</div>		
+	</div>
+
+	<!-- 自我介绍 -->
+
+	<a href="#"><div class="to-top"></div></a>
+
+	<!-- <div class="self-container">
+		<div class="self-intro-bo">
+			<div class='photo-container'><img class='myphoto' src="imgs/baoling.jpg"></div>
+			<div class="intro-text">About Baoling: Baoling is currently an interaction designer at Meituan-Dianping, former ux designer at eBay Shanghai. She's proficient in UX design，also good at UI and front-end coding.<br/>
+			<div class="link-my">
+				<a target="_blank" href="https://www.linkedin.com/in/baoling-yang-47548295/">LinkedIn</a>
+				<a target="_blank" href="http://www.jianshu.com/u/d27e26cd024d">简书</a>
+				<a target="_blank" href="http://oriental13.lofter.com/">Lofter</a>
+				<a target="_blank" href="https://github.com/horisony">Github</a> -->
+			<!-- 	<a target="_blank" href="file/baoling-cv-zh.pdf">Resume-ZH</a>
+				<a target="_blank" href="file/baoling-cv-en.pdf">Resume-EN</a> -->
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<!-- This website is designed and developed by Yuping Zou, all copyright reserved.<br/> -->
+		Copyright   © 2019 邹宇萍
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-</head>
-<body>
-	
-    <div class="select-btn-group">
-    	<div class="btn-select active" id="all-tag">ALL</div>
-    	<div class="btn-select" id="ux-tag">UX</div>
-    	<div class="btn-select" id="ui-tag">UI</div>
-    	<div class="btn-select" id="front-tag">FRONT</div>
-    	<div class="btn-select" id="animate-tag">ANIMATION</div>
-    </div>
+	<script type="text/javascript">
+		$(document).ready(function() { 
+			$("#tagAll").click(function(){
+				$(".project-container").show();
+			});
+			$("#tagUX").click(function() {
+				$(".project-container").not(".UX").hide();
+				$(".UX").show();
+			});
+			$("#tagVisual").click(function() {
+				$(".project-container").not(".Visual").hide();
+				$(".Visual").show();
+			});
+			$("#tagPractice").click(function() {
+				$(".project-container").not(".Practice").hide();
+				$(".Practice").show();
+			});
+			$("#tagConcept").click(function() {
+				$(".project-container").not(".Concept").hide();
+				$(".Concept").show();
+			});
+			$("#tagCulture").click(function() {
+				$(".project-container").not(".Culture").hide();
+				$(".Culture").show();
+			});
+			$("#tagJewelry").click(function() {
+				$(".project-container").not(".Jewelry").hide();
+				$(".Jewelry").show();
+			});
+			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop > currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+				currTop = windowTop;
+			});
 
-    <div class="container">
-    	<div class="item ux" style="background-image: url(image/jose.jpg);"></div>
-    	<div class="item ui" style="background-image: url(image/russ.jpg);"></div>
-    	<div class="item front" style="background-image: url(image/cogs.jpg);"></div>
-    	<div class="item animate" style="background-image: url(image/adult.jpg);"></div>
-    	<div class="item ux" style="background-image: url(image/jose.jpg);"></div>
-    	<div class="item ui" style="background-image: url(image/russ.jpg);"></div>
-    	<div class="item front" style="background-image: url(image/cogs.jpg);"></div>
-    	<div class="item animate" style="background-image: url(image/adult.jpg);"></div>
-    	<div class="item ux" style="background-image: url(image/jose.jpg);"></div>
-    	<div class="item ui" style="background-image: url(image/russ.jpg);"></div>
-    	<div class="item front" style="background-image: url(image/cogs.jpg);"></div>
-    	<div class="item animate" style="background-image: url(image/adult.jpg);"></div>
-    </div>
-
-
-    <script type="text/javascript">
-    	$(document).ready(function()
-        //基本元素loading结束后让JQuery生效
-    	{
-    		$(".btn-select").click(function(){
-    			$(this).addClass("active");
-    			$(this).siblings().removeClass("active");
-    			//点击#-tag就为btn-select添加一个activeClass，并移除带有active
-    		})
-    	$("#all-tag").click(function(){
-    		$(".item").fadeIn(200);//设置200ms加载完
-    	})
-    	$("#ux-tag").click(function(){
-    		$(".item").fadeOut(200);
-    		$(".ux").fadeIn(200);
-    	})
-    	$("#ui-tag").click(function(){
-    		$(".item").fadeOut(200);
-    		$(".ui").fadeIn(200);
-    	})
-    	$("#front-tag").click(function(){
-    		$(".item").fadeOut(200);
-    		$(".front").fadeIn(200);
-    	})
-    	$("#animate-tag").click(function(){
-    		$(".item").fadeOut(200);
-    		$(".animate").fadeIn(200);
-    	})
-    	})
-    </script>
+			$(".tag").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		}); 
+	</script>
 
 </body>
 </html>
