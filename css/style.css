@@ -61,7 +61,7 @@ img{
 	margin: -4px 12px 0 12px;
 }
 .tags-container{
-	margin-bottom: 34px;
+	margin-bottom: 36px;
 	margin-top: 32px;
 }
 .tags-container>.tag {
@@ -469,6 +469,14 @@ img{
 	line-height: 160%;
 	letter-spacing: 1px;
 }
+.self-intro-bo>.txt-lighter{
+	color: #aaa;
+	font-weight: 100;
+	font-size: 0.9em;
+	line-height: 160%;
+	letter-spacing: 1.2px;
+	margin-top: 2px;
+}
 .img-ai-intro{
 	width: 340px;
 	overflow: hidden;
@@ -760,7 +768,7 @@ img{
 		width: 100%!important;
 	}
 	.photo-container{
-		display: none;
+		/*display: none;*/
 	}
 	.intro-text{
 		width:100%!important;
@@ -885,7 +893,9 @@ img{
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 14px;
+	position: flex;
 }
+
 .myphoto{
 	width: 80px;
 	height: 80px;
@@ -942,4 +952,77 @@ video::-internal-media-controls-download-button {
 	width: 100%;
 	height: 4px;
 	background: transparent;
+}
+.portrait-intro-hi{
+	color: #555;
+	position: absolute;
+	top: 150px;
+	left: -135px;
+	width: 100%;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+.portrait-intro-zi{
+	color: #555;
+	position: absolute;
+	top: 150px;
+	left: 135px;
+	width: 100%;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+.myphoto-about{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	margin-left: -30px;
+	margin-top: 20px;
+	display: block;
+}
+.about-nam{
+    text-align: center;
+    color: #eee;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 160%;
+	letter-spacing: 1.6px;
+}
+.mail{
+	text-align: center;
+	color: #aaa;
+	margin-top: 2px;
+}
+.about-base{
+	margin-top: 40px;
+}
+.about-education,
+.about-work{
+	margin-top: 20px;
+}
+.about-section>.section-label{
+	max-width: 500px;
+    margin: 0 auto;
+    padding: 8px 0;
+    color: #888;
+	font-size: 1.2em;
+}
+.about-section>.section-content-bottom{
+	max-width: 500px;
+    margin: 0 auto;
+    padding: 12px 0 15px 0;
+    border-bottom: 1px solid #404040;
+    color: #ddd;
+	font-size:1em;
+	line-height: 12px;
+}
+.about-section>.section-content{
+	max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    color: #ddd;
+	font-size:1em;
+	line-height: 12px;
+}
+.layout-about{
+    margin-bottom: 35px;
 }
