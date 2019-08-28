@@ -933,9 +933,9 @@ img{
 	margin-top: 14px;
 	color: red;
 }
-video::-internal-media-controls-download-button {
+/*video::-internal-media-controls-download-button {
     display:none;
-}
+}*/
 .design-title{
 	font-size: 1.3em; color: #333; padding: 14px; 
 }
@@ -956,8 +956,8 @@ video::-internal-media-controls-download-button {
 .portrait-intro-hi{
 	color: #555;
 	position: absolute;
-	top: 150px;
-	left: -135px;
+	top: 145px;
+	left: -130px;
 	width: 100%;
 	font-size: 28px;
 	letter-spacing: 1px;
@@ -965,17 +965,17 @@ video::-internal-media-controls-download-button {
 .portrait-intro-zi{
 	color: #555;
 	position: absolute;
-	top: 150px;
-	left: 135px;
+	top: 145px;
+	left: 130px;
 	width: 100%;
 	font-size: 28px;
 	letter-spacing: 1px;
 }
 .myphoto-about{
-	width: 140px;
-	height: 140px;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
-	margin-left: -30px;
+	margin-left: -25px;
 	margin-top: 20px;
 	display: block;
 }
