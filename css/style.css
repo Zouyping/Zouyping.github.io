@@ -278,6 +278,15 @@ img{
 	background-size: cover;
 	background-position: center;
 }
+.sketch{
+	padding-bottom: 320px; 
+	background-color: white;
+	background-image:url(../imgs/心肺复苏/sketch.png); 
+	/*background-size: cover;*/
+	background-position: top;
+	width: 100%; 
+	margin: -10px 0 12px 0;
+}
 .module>.content{
 	width: 988px;
 	margin: auto;
@@ -291,14 +300,20 @@ img{
 	text-align: center;
 }
 .title-main{
-	font-size: 1.75em;
+	font-size: 1.2em;
 	/*line-height: 250%;*/
 	padding-bottom: .21em;
-	margin-bottom: .6em;
+	margin-bottom: 1.8em;
+	margin-top: 1em;
 	/*font-weight: bold;*/
 	text-align: center;
 	border-bottom: 2px solid #666;
 	display: inline-block;
+	font-weight: 600;
+}
+.one{
+	color: #e03b3b;
+	border-bottom: 2px solid  #e03b3b;
 }
 .module>.content>.txt{
 	font-size: 1.2em;
@@ -310,39 +325,46 @@ img{
 	text-align: justify;
 }
 .txt-main{
-	font-size: 1.2em;
-	line-height: 120%;
+	font-size: 1em;
+	line-height: 150%;
 	color: #666;
 	text-align: justify;
+	padding: 6px 7%;
 }
 .module>.content>.col-md-6-my.intro{
 	text-align: left;
 }
 .module>.content>.col-md-6-my>.title{
-	font-size: 1.85em;
+	font-size: 1.5em;
 	/*line-height: 230%;*/
+	margin-top: :-10px!important;
 	padding-bottom: .5em;
 	font-weight: bold;
 }
 .module>.content>.col-md-6-my>.txt{
-	font-size: 1.2em;
-	line-height: 120%;
+	padding-top: 10px;
+	font-size: 1.1em;
+	line-height: 150%;
 	/*font-weight: 100;*/
 	/*padding-bottom: 10px;*/
 	text-align: justify;
 }
-.txt-intro{
-	font-size: 1.3em!important;
-}
+/*.txt-intro{
+	font-size: 1.25em!important;
+	line-height: 15px;
+}*/
 .module>.content>.title-small{
 	font-weight: normal;
 	font-size: 1.6em;
 	padding-bottom: 7px;
 }
 .banner {
-	height: 400px;
+	height: 360px;
 	position: relative;
 	color: white;
+	background-image: url(../imgs/心肺复苏/心肺复苏-banner.png);
+	background-size: cover;
+	background-position: center;
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
@@ -376,8 +398,9 @@ img{
 }*/
 
 .col-md-6-my{
-	width: 50%;
-	float: left;
+	width: 45%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /*journey launch*/
@@ -478,6 +501,7 @@ img{
 	margin-top: 2px;
 }
 .img-ai-intro{
+	float: right;
 	width: 340px;
 	overflow: hidden;
 	/*padding-top: 12px;*/
@@ -664,6 +688,10 @@ img{
 		width: 50%;
 		float: left;
 	}
+	.sketch{
+		padding-bottom: 150px;
+		background-position: center;
+	}
 
 }
 @media (min-width: 768px){
@@ -736,6 +764,10 @@ img{
 	.col-md-4-my{
 		width: 100%;
 	}
+	.sketch{
+		padding-bottom: 90px;
+		background-position: center;
+	}
 }
 @media(max-width: 579px) {/*row become columns*/
 	.container-my{
@@ -744,9 +776,9 @@ img{
 	.col-md-6-my{
 		width: 100%;
 	}
-	.banner-responsive{
+	/*.banner-responsive{
 		height: 580px;
-	}
+	}*/
 	.banner-responsive-video{
 		height: 510px;
 	}
@@ -778,7 +810,13 @@ img{
 		padding-right: 15px!important;
 	}
 	.col-md-6-my.intro{
-		padding-top: 0!important;
+		padding-top: 0px!important;
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.sketch{
+		padding-bottom: 0px;
+		background-position: center;
 	}
 }
 /*@media (max-width: 590px) {
@@ -796,6 +834,17 @@ img{
 		width: 100%;
 		margin-left: 0;
 	}
+	.sketch{
+		padding-bottom: 0px;
+		background-position: center;
+	}
+	.title-main{
+	    font-size: 1em;
+	    /*line-height: 250%;*/
+	    /*padding-bottom: .21em;*/
+	    margin-bottom: 1em;
+	    margin-top: -1.5em;
+    }
 }
 
 .post-preview > a {
@@ -863,6 +912,8 @@ img{
     font-size: 14px;
   }
 }
+
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
@@ -1026,3 +1077,4 @@ img{
 .layout-about{
     margin-bottom: 35px;
 }
+.
