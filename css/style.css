@@ -287,6 +287,9 @@ img{
 	width: 100%; 
 	margin: -10px 0 12px 0;
 }
+.angle{
+	background-image:url(../imgs/婴儿心率/草图.png);
+}
 .module>.content{
 	width: 988px;
 	margin: auto;
@@ -313,7 +316,11 @@ img{
 }
 .one{
 	color: #e03b3b;
-	border-bottom: 2px solid  #e03b3b;
+	border-bottom: 2px solid  #e18787;
+}
+.two{
+	color: #e18787;
+	border-bottom: 2px solid  #e18787;
 }
 .module>.content>.txt{
 	font-size: 1.2em;
@@ -358,7 +365,7 @@ img{
 	font-size: 1.6em;
 	padding-bottom: 7px;
 }
-.banner {
+.banner-heart {
 	height: 360px;
 	position: relative;
 	color: white;
@@ -369,6 +376,14 @@ img{
 	justify-content: center;
 	align-items: center;*/
 	/*background: red;*/
+}
+.banner-angle{
+	height: 360px;
+	position: relative;
+	color: #564e4e;
+	background-image: url(../imgs/婴儿心率/婴儿心率-banner.png);
+	background-size: cover;
+	background-position: center 60%;
 }
 #video-banner{
 	opacity: 1;

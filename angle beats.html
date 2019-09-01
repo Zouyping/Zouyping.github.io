@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Angle Beats-关于胎儿心率的概念设计</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="module banner-angle banner-responsive" style="background-color:#ffe3e3; overflow: hidden;">
+		<div class="content clearfix">
+			<div class="col-md-6-my intro" style="padding-top: 35px;">
+				<div class="title" style="font-size: 1.8em;">Angle Beats</div>
+				<div class="txt txt-intro" style="color:  #564e4e; ">Angle Beats是围绕胎心的设计，可分为胎心监测器和手环。在母亲怀孕前期戴上胎心监测器，父亲可通过手环模拟并感受胎儿心率，以增强父亲的角色带入感。</div>
+				<div class="txt txt-intro" style="color:  #564e4e; ">在婴儿出生后，胎心检测器可以延展成心跳模拟器，模拟母亲心跳，从而达到安抚宝宝的目的。</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main two" >设计背景</div>
+            <div class="txt-main" style="text-align: left;">心跳是生命的特征。当妻子怀孕时，准父亲不能像妻子那样直接感受新生命，且常忙于工作，只能偶尔空闲时贴近妻子肚子听听胎儿心跳。这让准父亲缺少父亲这一角色的代入感。</div>
+            <div class="txt-main" style="text-align: left;">胎儿在子宫时，在妈妈肚子里的环境很安全舒适，且每天听到得最多的就是妈妈有节奏的心跳声。当他出生后，环境改变了，一切变得陌生且缺少安全感。所以若再次听到类似的母亲心跳声，就形成了条件反射，觉得很舒适安全，很容易就入睡。</div>
+			<img style='width: 90%; padding: 20px 0;' src="imgs/婴儿心率/设计背景.jpg">
+		</div>
+	</div>
+
+	<div class="module" style="background-color: #fffafa;">
+		<div class="content clearfix">
+			<div class="title-main two">思维发散＆设计定位</div>
+			<img style='width: 100%; padding: 20px 0;' src="imgs/婴儿心率/思维.png">
+		</div>
+	</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main two" >目标品质</div>
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/婴儿心率/目标品质.png">
+		</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main two" >草图绘制</div>
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/婴儿心率/草图.png">
+		</div>
+
+    <div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main two" >功能说明</div>
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/婴儿心率/功能.png">
+		</div>
+   
+	<div class="module" style="background-color:  white;">
+		<div class="content clearfix">
+			<div class="title-main two" >效果图</div>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/婴儿心率/双螺旋手环.png">
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/婴儿心率/beat.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/婴儿心率/场景1.jpg">
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/婴儿心率/场景2.jpg">
+		</div>
+	</div>
+
+	
+
+<!-- 	<div class="module" style="background-color: #f7f6f5;">
+		<div class="content clearfix">
+			<div class="title-main" style="font-weight: bold; font-size: 1.85em; margin-bottom: 20px;">User Flow</div>
+			<img style='width: 100%; padding: 20px 0;' src="imgs/pro-season/user_flow2.png">
+		</div>
+	</div> -->
+
+
+	<a href="#"><div class="to-top"></div></a>
+	
+	<div class="footer ">
+		<!-- This website is designed and developed by Baoling Yang, all copyright reserved.<br/> -->
+		Copyright   © 2019 邹宇萍
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop >= currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+
+				currTop = windowTop;
+
+			});
+
+			$(".tags>.btn").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+		var myVideo0 = document.getElementById("video0"); 
+		var myBtn0 = document.getElementById("play-btn0"); 
+		function playPause0() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo0.paused) {
+		    	myVideo0.play();
+		    	myVideo0.controls="controls";
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn0.style.display="none";
+
+		    } else {
+		        myVideo0.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn0.style.display="inline-block";
+		    }
+		}  
+		var myVideo1 = document.getElementById("video1"); 
+		var myBtn1 = document.getElementById("play-btn1"); 
+		
+		function playPause1() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo1.paused) {
+		    	myVideo1.play();
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn1.style.display="none";
+		    } else {
+		        myVideo1.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn1.style.display="inline-block";
+		    }
+		} 
+
+		var myVideo2 = document.getElementById("video2");
+		var myBtn2 = document.getElementById("play-btn2");  
+		function playPause2() { 
+		    if (myVideo2.paused){
+		        myVideo2.play();
+		        myBtn2.style.display="none"; 
+		    }
+		    else{
+		        myVideo2.pause(); 
+		        myBtn2.style.display="inline-block";
+		    } 
+		} 
+	</script>
+
+</body>
+</html>
