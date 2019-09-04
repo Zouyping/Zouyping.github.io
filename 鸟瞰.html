@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>鸟瞰-鸟类科普APP设计</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="module banner-nk banner-responsive" style="background:linear-gradient(60deg, #b6d78c, #7ac8cb); overflow: hidden;">
+		<div class="content clearfix">
+			<div class="col-md-6-my intro" style="padding-top: 35px;">
+				<div class="title">鸟瞰</div>
+				<div class="txt txt-intro" style="color: white; ">鸟瞰，集三种方式让你从全方位认识一只鸟儿:拍照或录音探鸟，图文或百科识鸟，以及，特色养鸟小游戏让你了解一只鸟儿的一生。鸟瞰将基于 Google TensorFlow 框架，构建一个机器学习应用, 可以通过图像、音频两种信息输入识别鸟的种类。从此现场识鸟不再困难。</div>
+	   		</div>
+			
+		</div>
+	</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<img style='width: 15%; margin: 20px 0 -20px 0;' src="imgs/鸟瞰/鸟瞰-banner.png">
+		</div>
+
+    <div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main five" >设计愿景</div>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/愿景.png">
+		</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main five" >目标用户</div><br>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/目标用户.png">
+		</div>
+	</div>
+
+    <div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main five" >用户模型</div><br>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/用户模型.png">
+		</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main five" >特色功能</div><br>
+			<img style='width: 80%; margin: 0 0 10px 0;' src="imgs/鸟瞰/特色.png">
+			<div class="txt-main" style="text-align: left;">
+				我们将基于<b>Google TensorFlow 框架，构建一个机器学习应用</b>, 可以通过<b>图像和音频两种信息输入识别鸟的种类</b>。鸟类的叫声和图像数据集我们将与鸟类爱好者, 环境保护组织和领域专家合作收集完成, 并租用英伟达的 GPU 云, 在服务器上进行训练。 待模型训练成熟, 系统将具有如下功能:</div>
+            <div class="txt-main" style="text-align: left;">
+	            <b>1. 识别特定的鸟类叫声：</b>AI 系统使用已记录和存储的音频, 将其切割成不同长度的片段并转换为光谱图。在将谱图切成块之后，每个块的时间长度将小于1秒钟. 这些图像块将通过深度卷积神经网络单独处理, 完成对多种鸟的分类.</div>
+            <div class="txt-main" style="text-align: left;">
+                <b>2. 识别特定的鸟类图像：</b>AI 系统将使用深度卷积神经网络, 从输入图像中分块提取鸟的各部位的特征, 如鸟的喙部形状, 羽毛颜色, 体型大小, 腿部颜色等, 与预先建立的鸟类特征数据库比较, 分析推断出置信度最高的种类.</div>
+		</div>
+		
+	<div class="module" style="background-color:  white;">
+		<div class="content clearfix">
+			<div class="title-main five" >界面＆交互方式</div>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/界面1.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/界面2.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/界面3.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/界面4.png">
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/鸟瞰/界面5.png">
+		</div>
+	</div>
+
+	<div class="module" style="background-color:  white;">
+		<div class="content clearfix">
+			<div class="title-main five" >UI设计规范</div>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-17.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-18.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-19.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-20.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-21.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-22.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-23.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-24.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/鸟瞰/规范-25.png">
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/鸟瞰/规范-26.png">
+		</div>
+	</div>
+    
+    <div class="module" style="background-color:white;">
+		<div class="content clearfix">
+			<div class="title-main five" >视频展示</div><br>
+			<video width="100%"  controls>
+                <source src="video/鸟瞰.mp4" type="video/mp4">
+             Your browser does not support the video element.
+             </video>
+             </div>
+	</div>
+	
+
+<!-- 	<div class="module" style="background-color: #f7f6f5;">
+		<div class="content clearfix">
+			<div class="title-main" style="font-weight: bold; font-size: 1.85em; margin-bottom: 20px;">User Flow</div>
+			<img style='width: 100%; padding: 20px 0;' src="imgs/pro-season/user_flow2.png">
+		</div>
+	</div> -->
+
+
+	<a href="#"><div class="to-top"></div></a>
+	
+	<div class="footer ">
+		<!-- This website is designed and developed by Baoling Yang, all copyright reserved.<br/> -->
+		Copyright   © 2019 邹宇萍
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop >= currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+
+				currTop = windowTop;
+
+			});
+
+			$(".tags>.btn").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+		var myVideo0 = document.getElementById("video0"); 
+		var myBtn0 = document.getElementById("play-btn0"); 
+		function playPause0() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo0.paused) {
+		    	myVideo0.play();
+		    	myVideo0.controls="controls";
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn0.style.display="none";
+
+		    } else {
+		        myVideo0.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn0.style.display="inline-block";
+		    }
+		}  
+		var myVideo1 = document.getElementById("video1"); 
+		var myBtn1 = document.getElementById("play-btn1"); 
+		
+		function playPause1() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo1.paused) {
+		    	myVideo1.play();
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn1.style.display="none";
+		    } else {
+		        myVideo1.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn1.style.display="inline-block";
+		    }
+		} 
+
+		var myVideo2 = document.getElementById("video2");
+		var myBtn2 = document.getElementById("play-btn2");  
+		function playPause2() { 
+		    if (myVideo2.paused){
+		        myVideo2.play();
+		        myBtn2.style.display="none"; 
+		    }
+		    else{
+		        myVideo2.pause(); 
+		        myBtn2.style.display="inline-block";
+		    } 
+		} 
+	</script>
+
+</body>
+</html>

@@ -287,13 +287,15 @@ img{
 	width: 100%; 
 	margin: -10px 0 12px 0;
 }
-.angle{
-	background-image:url(../imgs/婴儿心率/草图.png);
-}
 .module>.content{
 	width: 988px;
 	margin: auto;
-	padding: 60px 2% 60px 2%;
+	padding: 50px 2% 50px 2%;
+}
+.module>.content-cr{
+	width: 988px;
+	margin: auto;
+	margin-top: 10px;
 }
 .module>.content>.title{
 	font-size: 1.9em;
@@ -321,6 +323,38 @@ img{
 .two{
 	color: #e18787;
 	border-bottom: 2px solid  #e18787;
+}
+.three{
+	color: #ae6932;
+	border-bottom: 2px solid  #ae6932;
+}
+.five{
+	color: #7ac8cb;
+	border-bottom: 2px solid  #7ac8cb;
+}
+.six{
+	color: #ac8663;
+	border-bottom: 2px solid  #ac8663;
+}
+.seven{
+	color: #dedede;
+	border-bottom: 2px solid  #dedede;
+}
+.eleven{
+	color: #efca32;
+	border-bottom: 2px solid  #efca32;
+}
+.twelfth-1{
+	color: #498679;
+	border-bottom: 2px solid  #498679;
+}
+.twelfth-2{
+	color: #2e445b;
+	border-bottom: 2px solid  #2e445b;
+}
+.lingke{
+	color: #222;
+	border-bottom: 2px solid  #222;
 }
 .module>.content>.txt{
 	font-size: 1.2em;
@@ -384,6 +418,77 @@ img{
 	background-image: url(../imgs/婴儿心率/婴儿心率-banner.png);
 	background-size: cover;
 	background-position: center 60%;
+}
+.banner-fozhu{
+	height: 360px;
+	position: relative;
+	color: white;
+	background-image: url(../imgs/记忆佛珠/记忆佛珠-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.banner-cr{
+    height: 360px;
+	position: relative;
+	color: white;
+	background-image: url(../imgs/生物钟/手环-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.banner-nk,
+.banner-yp,
+.banner-cy,
+.banner-czkj,
+.banner-vi,
+.banner-lk{
+	color: white;
+}
+.banner-jzdc{
+    height: 360px;
+	position: relative;
+	color: #666;
+	background-image: url(../imgs/借箸代筹/借箸代筹-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.banner-yp{
+	background-image: url(../imgs/UI设计/乐跑/乐跑-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.banner-ccjj{
+	background-image: url(../imgs/草船借箭/草船借箭-banner.png);
+	background-size: 95%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.banner-cy{
+	background-image: url(../imgs/禅/禅-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 65%;
+}
+.banner-czkj{
+	background-image: url(../imgs/锤子科技周边产品/锤子-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 38%;
+}
+.banner-vi{
+	background-image: url(../imgs/VI设计/麦律/VI-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 38%;
+}
+.banner-lk{
+	background-image: url(../imgs/领克/领克-banner.png);
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 #video-banner{
 	opacity: 1;
@@ -691,9 +796,11 @@ img{
 	}
 }
 @media(max-width: 988px) {
-	.module>.content{
+	.module>.content,
+	.module>.content-cr{
 		width: 100%;
 	}
+
 	.ai-problem{
 		width: 82%; 
 		max-width: 100%; 
@@ -820,7 +927,7 @@ img{
 	.intro-text{
 		width:100%!important;
 	}
-	.module>.content{
+	.module>.content,{
 		padding-left: 15px!important;
 		padding-right: 15px!important;
 	}
@@ -1092,4 +1199,3 @@ img{
 .layout-about{
     margin-bottom: 35px;
 }
-.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>借箸代筹-趣味餐具文创设计</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="module banner-jzdc banner-responsive" style="background-color:white; overflow: hidden;">
+		<div class="content clearfix">
+			<div class="col-md-6-my intro" style="padding-top: 60px;">
+				<div class="title">借箸代筹</div>
+				<div class="txt txt-intro" style="color:#666; ">借箸代筹为寺庙文创产品设计方案。设计亮点在平淡无奇的筷子中融入了寺庙中常用来算卦的笅杯概念，给取筷子的无味操作增添一丝趣味性。</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six" >设计背景</div>
+			<div class="txt-main" style="text-align: center;">笅杯，中国古老的算卦工具，用来占卜好坏。一副卦由两个阴阳相向的笅杯组成。</div>
+            <div class="txt-main" style="text-align: center;">掷出后，两个平面向上为“笑杯”；两个弧面向上为“阴杯”；一个平面向且一个弧面向上为“圣杯”。</div>
+			<img style='width: 90%; padding: 20px 0;' src="imgs/借箸代筹/设计背景.png">
+		</div>
+	</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six">设计方案</div>
+			<img style='width: 100%; padding: 20px 0;' src="imgs/借箸代筹/概念.png">
+			<div class="txt-main" style="text-align:center;">“筷言”巧妙运用榫卯结构区分出阴和阳的概念，并体现了笅杯这一概念，为生活增添一丝趣味性。</div>
+		</div>
+	</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six" >故事板</div>
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/借箸代筹/故事板.png">
+		</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six" >效果图</div>
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/借箸代筹/渲染图1.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/借箸代筹/渲染图2.png">
+			<img style='width: 100%; margin: 0 0 5px 0;' src="imgs/借箸代筹/效果图1.png">
+			<img style='width: 100%; margin: 0 0 10px 0;' src="imgs/借箸代筹/效果图2.png">
+		
+
+	<a href="#"><div class="to-top"></div></a>
+	
+	<div class="footer ">
+		<!-- This website is designed and developed by Baoling Yang, all copyright reserved.<br/> -->
+		Copyright   © 2019 邹宇萍
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop >= currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+
+				currTop = windowTop;
+
+			});
+
+			$(".tags>.btn").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+		var myVideo0 = document.getElementById("video0"); 
+		var myBtn0 = document.getElementById("play-btn0"); 
+		function playPause0() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo0.paused) {
+		    	myVideo0.play();
+		    	myVideo0.controls="controls";
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn0.style.display="none";
+
+		    } else {
+		        myVideo0.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn0.style.display="inline-block";
+		    }
+		}  
+		var myVideo1 = document.getElementById("video1"); 
+		var myBtn1 = document.getElementById("play-btn1"); 
+		
+		function playPause1() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo1.paused) {
+		    	myVideo1.play();
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn1.style.display="none";
+		    } else {
+		        myVideo1.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn1.style.display="inline-block";
+		    }
+		} 
+
+		var myVideo2 = document.getElementById("video2");
+		var myBtn2 = document.getElementById("play-btn2");  
+		function playPause2() { 
+		    if (myVideo2.paused){
+		        myVideo2.play();
+		        myBtn2.style.display="none"; 
+		    }
+		    else{
+		        myVideo2.pause(); 
+		        myBtn2.style.display="inline-block";
+		    } 
+		} 
+	</script>
+
+</body>
+</html>

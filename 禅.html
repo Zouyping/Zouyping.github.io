@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>禅意-陶艺与金属</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="module banner-cy banner-responsive" style="background-color:#222; overflow: hidden;">
+		<div class="content clearfix">
+			<div class="col-md-6-my intro" style="padding-top: 30px;padding-bottom: 25px;">
+				<div class="title">禅意</div>
+				<div class="txt txt-intro" style="color:#eee; ">与一陶艺工作室合作，对山和佛的陶艺元素进行耳饰设计。共设计三款耳饰——佛光照、祥云伴、山峦叠。</div>
+			</div>
+			
+		</div>
+	</div>
+	
+     <div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six">山峦叠</div><br>
+			<div class="txt-main" style="text-align:left;">提取山峦的棱角和相叠特征，并通过多个交叠的正方形合金框体现。两只耳环形态不对称、长度不一致，给静态的造型增添一丝跳跃感。</div>
+			<img style='width: 95%;' src="imgs/禅/排版1.png">
+		</div>
+	</div>
+
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six">祥云伴</div><br>
+			<div class="txt-main" style="text-align:left;">将祥云用缠绕成略带疏密变化的线圈表现，并错落粘于黑色山体上，犹如祥云绕山。黑色与金色、陶瓷与金属的碰撞，带来视觉冲击。</div>
+			<img style='width: 95%;' src="imgs/禅/排版2.png">
+		</div>
+	</div>
+
+	
+   <div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title-main six">佛光照</div><br>
+			<div class="txt-main" style="text-align:left;">灵感来源于佛像绘画中常见的背光，用贝壳和金属圈进行表现</div>
+			<img style='width: 95%;' src="imgs/禅/排版3.png">
+		</div>
+	</div>
+					
+
+	<a href="#"><div class="to-top"></div></a>
+	
+	<div class="footer ">
+		<!-- This website is designed and developed by Baoling Yang, all copyright reserved.<br/> -->
+		Copyright   © 2019 邹宇萍
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop >= currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+
+				currTop = windowTop;
+
+			});
+
+			$(".tags>.btn").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+		var myVideo0 = document.getElementById("video0"); 
+		var myBtn0 = document.getElementById("play-btn0"); 
+		function playPause0() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo0.paused) {
+		    	myVideo0.play();
+		    	myVideo0.controls="controls";
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn0.style.display="none";
+
+		    } else {
+		        myVideo0.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn0.style.display="inline-block";
+		    }
+		}  
+		var myVideo1 = document.getElementById("video1"); 
+		var myBtn1 = document.getElementById("play-btn1"); 
+		
+		function playPause1() { 
+			// myBtn1.setAttribute('src', 'imgs/play-btn.svg');
+		    if (myVideo1.paused) {
+		    	myVideo1.play();
+		    	// myBtn1.attr('src', 'imgs/pause-btn.svg'); 
+		    	myBtn1.style.display="none";
+		    } else {
+		        myVideo1.pause();
+		        // myBtn1.setAttribute('src', 'imgs/pause-btn.svg');
+		        myBtn1.style.display="inline-block";
+		    }
+		} 
+
+		var myVideo2 = document.getElementById("video2");
+		var myBtn2 = document.getElementById("play-btn2");  
+		function playPause2() { 
+		    if (myVideo2.paused){
+		        myVideo2.play();
+		        myBtn2.style.display="none"; 
+		    }
+		    else{
+		        myVideo2.pause(); 
+		        myBtn2.style.display="inline-block";
+		    } 
+		} 
+	</script>
+
+</body>
+</html>
